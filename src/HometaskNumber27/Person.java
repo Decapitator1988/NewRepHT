@@ -33,23 +33,8 @@ public class Person {
         max-= min;
         return (int) (Math.random()*++max)+min;
     }
-    void adding(Person person){
-        listOfPersons.add(person);
-    }
 
-    static void showMiddleAgePerson(List<Person>list){
-        for (int i = 0; i <list.size() ; i++) {
-            if(list.get(i).age>25&&list.get(i).age<45){
-                System.out.println(list.get(i));
-        }
-
-        }
-
-    }
-
-
-
-    @Override
+   @Override
     public String toString() {
         return name+", "+age;
     }
