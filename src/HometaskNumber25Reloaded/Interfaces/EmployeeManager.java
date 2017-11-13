@@ -1,7 +1,7 @@
-package HTNumber25.Main.Interfaces;
+package HometaskNumber25Reloaded.Interfaces;
 
-import HTNumber25.Main.Logic.Department;
-import HTNumber25.Main.Logic.Employee;
+import HometaskNumber25Reloaded.Logic.Department;
+import HometaskNumber25Reloaded.Logic.Employee;
 
 public interface EmployeeManager {
         public void addEmployee(Employee employee);

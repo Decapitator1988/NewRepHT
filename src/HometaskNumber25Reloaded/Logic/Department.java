@@ -1,27 +1,26 @@
-package HTNumber25.Main.Logic;
+package HometaskNumber25Reloaded.Logic;
 
-import HTNumber25.Main.Enums.NameOfDepartment;
+import HometaskNumber25Reloaded.Enums.NameOfDepartment;
 
 import java.util.ArrayList;
-import java.util.HashSet;
 import java.util.List;
-import java.util.Set;
+
 
 public class Department {
     private String nameOfDepart;
     private int MAX_EMPLOYEES;
     private List<Employee> employeeSet;
 
-   public List<Employee> getEmployeeSet() {
+    public List<Employee> getEmployeeSet() {
         return employeeSet;
     }
 
+
     public Department(NameOfDepartment nameOfDepartment, int max) {
-       this.nameOfDepart = nameOfDepartment.toString();
+        this.nameOfDepart = nameOfDepartment.toString();
         MAX_EMPLOYEES = max;
         employeeSet = new ArrayList<>();
     }
-
 
     @Override
     public boolean equals(Object o) {

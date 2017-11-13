@@ -1,17 +1,23 @@
-package HTNumber25.Main.Logic;
+package HometaskNumber25Reloaded.Logic;
 
 
-import HTNumber25.Main.Enums.NameOfDepartment;
-import HTNumber25.Main.Interfaces.EmployeeManager;
-import HometaskNumber13.Array;
+import HometaskNumber25Reloaded.Interfaces.EmployeeManager;
 
 import java.util.*;
 
 public class EmployeeManagerImp implements EmployeeManager{
     private Set<Employee> wholeStaff;
+    private List<Department> departmentList = new ArrayList<>();
+
+    public void addingDepsInListOfDep(Department department){
+        departmentList.add(department);
+
+    }
+
 
     public EmployeeManagerImp() {
         wholeStaff = new HashSet<>();
+
     }
 
     @Override
@@ -29,6 +35,12 @@ public class EmployeeManagerImp implements EmployeeManager{
     @Override
     public void removeEmployee(Employee employee) {
         wholeStaff.remove(employee);
+        for (Department dep:departmentList) {
+            if(dep.getEmployeeSet().contains(employee)){
+                dep.getEmployeeSet().remove(employee);
+            }
+
+        }
     }
 
     @Override
