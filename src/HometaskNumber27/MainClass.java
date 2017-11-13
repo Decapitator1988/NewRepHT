@@ -45,6 +45,8 @@ public class MainClass {
             }
         }
         System.out.println();
+
+
     }
 
     private static void showPersonStartsNameWithA(Stream<Person> stream, Collection<Person> collection) {
