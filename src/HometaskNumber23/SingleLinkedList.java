@@ -2,7 +2,7 @@ package HometaskNumber23;
 
 
 
-public class SingleLinkedList {
+public  class SingleLinkedList {
     private Node head;
     private Node tail;
     public static int nodeCounter = 0;
@@ -41,6 +41,9 @@ public class SingleLinkedList {
 
 
     }
+
+
+
     public boolean contains(String data){
         return (find(data)!=null);
     }
